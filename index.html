@@ -3,91 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Blog</title>
+    <title>Monster Hunter : World</title>
     <link href="assets/style.css" rel="stylesheet" />
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="#home" class="logo">Meow</a>
-        <div class="toggle"></div>
+        <a href="#home" class="logo">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <div class="toggle" onclick="toggleMenu();"></div>
 
         <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+          <li><a href="#overview" onclick="toggleMenu();">Overview</a></li>
+          <li><a href="#gallery" onclick="toggleMenu();">Gallery</a></li>
+          <li><a href="#links" onclick="toggleMenu();">Links</a></li>
+          <li><a href="#profile" onclick="toggleMenu();">Profile</a></li>
         </ul>
       </nav>
     </header>
 
     <div class="banner" id="home">
-      <h2>Welcome to my personal blog!</h2>
-      <p>Cat is a fluffy UwU creature</p>
+      <img src="assets/img/world-logo.png" alt="world-logo" class="logo" />
+      <h2>A World where the hunt begins!</h2>
     </div>
 
     <main>
-      <article class="about" id="about">
-        <div class="container">
-          <div class="heading">
-            <h2>About Me</h2>
-            <p>A short intro about myself!</p>
-          </div>
+      <article class="overview" id="overview">
+        <div class="heading">
+          <h2>Introduction</h2>
+        </div>
+        <section class="container">
           <div class="content">
             <div class="content-text">
-              <h3>First of all, i'm a Cat-Lover!</h3>
+              <h2>Overview</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Perferendis laborum nostrum neque blanditiis ad iusto
-                distinctio, quo ex quasi hic et accusamus reiciendis soluta,
-                harum rem. Quis doloremque eius, repellendus ab eligendi sint,
-                animi officia sunt quam eum id fugiat.<br /><br />Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Nobis repellendus
-                fuga dolorum quas laborum eum aut animi ut inventore veritatis,
-                quisquam architecto optio impedit cupiditate. Quasi nesciunt
-                animi saepe ipsa ab unde rem quae assumenda cum sint? Error esse
-                reprehenderit vitae repellat omnis, vero, temporibus, eaque quae
-                quod natus quas!<br /><br />Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Quos itaque hic iste? Labore illo,
-                accusamus veritatis laudantium, rem ipsam voluptate eaque
-                voluptatibus corrupti culpa velit sunt consequatur laboriosam?
-                Doloremque, officiis?
+                Battle gigantic monsters in epic locales.
+                <br />
+                <br />
+                As a hunter, you'll take on quests to hunt monsters in a variety
+                of habitats. Take down these monsters and receive materials that
+                you can use to create stronger weapons and armor in order to
+                hunt even more dangerous monsters.
+                <br />
+                <br />
+                In Monster Hunter: World, the latest installment in the series,
+                you can enjoy the ultimate hunting experience, using everything
+                at your disposal to hunt monsters in a new world teeming with
+                surprises and excitement.
               </p>
             </div>
             <aside class="about-img">
-              <img src="assets/img/cat1.jpg" alt="cat" class="img" />
+              <img
+                src="assets/img/fatalis-monster-hunter.gif"
+                alt="cat"
+                class="img"
+              />
             </aside>
           </div>
-        </div>
+        </section>
+      </article>
+
+      <article class="setting" id="setting">
+        <section class="container">
+          <div class="content">
+            <aside class="about-img">
+              <img src="assets/img/astera.jpg" alt="cat" class="img" />
+            </aside>
+            <div class="content-text">
+              <h2>Setting</h2>
+              <p>
+                Once every decade, elder dragons trek across the sea to travel
+                to the land known as the New World in a migration referred to as
+                the Elder Crossing.
+                <br />
+                <br />
+                To get to the bottom of this mysterious phenomenon, the Guild
+                has formed the Research Commission, dispatching them in large
+                fleets to the New World.
+                <br />
+                <br />
+                As the Commission sends its Fifth Fleet in pursuit of the
+                colossal elder dragon known as Zorah Magdaros, one hunter is
+                about to embark on a journey grander than anything they could
+                have ever imagined.
+              </p>
+            </div>
+          </div>
+        </section>
       </article>
 
       <article class="gallery" id="gallery">
         <div class="heading">
           <h2>Gallery</h2>
-          <p>My Cat pictures that i found on the internet!</p>
         </div>
         <div class="content">
-          <img src="assets/img/cat6.jpg" alt="cat6" class="img" />
-          <img src="assets/img/cat7.jpg" alt="cat7" class="img" />
-          <img src="assets/img/cat8.jpg" alt="cat8" class="img" />
-          <img src="assets/img/cat2.jpg" alt="cat2" class="img" />
-          <img src="assets/img/cat3.jpg" alt="cat3" class="img" />
-          <img src="assets/img/cat4.jpg" alt="cat4" class="img" />
-          <img src="assets/img/cat9.jpg" alt="cat9" class="img" />
-          <img src="assets/img/cat5.jpg" alt="cat5" class="img" />
+          <img src="assets/img/gallery1.jpg" alt="gallery1" class="img" />
+          <img src="assets/img/gallery2.jpg" alt="gallery2" class="img" />
+          <img src="assets/img/gallery3.jpg" alt="gallery3" class="img" />
+          <img src="assets/img/gallery4.jpg" alt="gallery4" class="img" />
+          <img src="assets/img/gallery5.jpg" alt="gallery5" class="img" />
+          <img src="assets/img/gallery6.jpg" alt="gallery6" class="img" />
         </div>
       </article>
 
-      <article class="contact" id="contact">
+      <article class="links" id="links">
+        <div class="heading">
+          <h2>Links</h2>
+        </div>
+        <div class="content">
+          <a
+            href="https://store.steampowered.com/app/582010/Monster_Hunter_World/"
+            target="_blank"
+          >
+            <img src="assets/img/steam-logo.png" alt="gallery1" class="img"
+          /></a>
+          <a
+            href="https://store.playstation.com/en-us/product/UP0102-CUSA07713_00-0000000000000000"
+            target="_blank"
+            ><img src="assets/img/ps-logo.png" alt="gallery2" class="img"
+          /></a>
+          <a
+            href="https://www.xbox.com/en-US/games/store/monster-hunter-world/BNG91PT95LQN"
+            target="_blank"
+            ><img src="assets/img/xbox-logo.png" alt="gallery3" class="img"
+          /></a>
+        </div>
+      </article>
+
+      <article class="profile" id="profile">
         <div class="container">
           <div class="heading">
-            <h2>Contact Me</h2>
-            <p>You can contact me about cat, meow!</p>
+            <h2>Profile</h2>
           </div>
 
           <div class="content">
-            <div class="contact-info">
+            <div class="profile-info">
               <div class="info-box">
                 <div class="box">
                   <div class="info-text">
@@ -115,9 +168,9 @@
               </div>
             </div>
 
-            <aside class="identity">
+            <section class="identity">
               <img src="assets/img/profile.jpg" alt="profile" class="img" />
-              <section>
+              <article>
                 <h3>My Profile</h3>
                 <p>
                   Wildan Vinu Kananta <br />
@@ -126,15 +179,24 @@
                   <br />
                   <q>I love listening to music!</q>
                 </p>
-              </section>
-            </aside>
+              </article>
+            </section>
           </div>
         </div>
       </article>
     </main>
 
     <footer>
-      <p>This is a footer &#169; 2023, Meow Meow.</p>
+      <p>Copyright &#169; 2023, wildanvk.</p>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
